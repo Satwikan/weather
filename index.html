@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather.io</title>
+    <link rel="icon" href="icon.png" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script src="./script.js" defer></script> -->
+  </head>
+
+  <body onload="myFunction()">
+    <nav id="navbar">
+      <ul>
+        <li class="item">
+          <a href="/Weather.io-master/index.html">Weather App</a>
+        </li>
+        <li class="item"><a href="#services">MOVIE</a></li>
+      </ul>
+    </nav>
+    <div id="loading">aaaaaa</div>
+    <div class="cont">
+      <div class="one">
+        <h1>🌦️ Weather App ☔️</h1>
+      </div>
+    </div>
+    <div class="two">
+      <div class="card">
+        <div class="search">
+          <input type="text" class="search-bar" placeholder="Search" />
+          <button>h</button>
+        </div>
+        <div class="weather loading">
+          <h2 class="city">Weather in Mumbai</h2>
+          <h1 class="temp">51°C</h1>
+          <div class="flex">
+            <img
+              src="https://openweathermap.org/img/wn/04d.png"
+              alt=""
+              class="icon"
+            />
+            <div class="description">Cloudy</div>
+          </div>
+          <div class="other">
+            <div class="humidity">Humidity: 60%</div>
+            <div class="wind">Wind Speed: 6.2 km/h</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let preloader = document.getElementById("loading");
+      function myFunction() {
+        preloader.style.display = "none";
+      }
+    </script>
+    <script src="./script.js" ></script>
+  </body>
+</html>
